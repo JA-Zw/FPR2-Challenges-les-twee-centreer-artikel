@@ -3,27 +3,25 @@
 <head>
     <title>iets met artikels</title>
     <style>
-        #articles > div {
-            display: flex;
-			flex-direction: column;
-			gap: 10px;
-        }
-		
-        #articles > div > article {
+        #articles > article {
             display: block;
             min-height: 100px;
 			background: white;
-			min-width: 150px;
+			min-width: 250px;
         }
 
         #articles {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
+            display: grid;
+			gap: 10px;
 			justify-content: center;
-			align-items: center;
 			height: 100%;
+			width: 100%;
         }
+		
+		.featured {
+			  grid-column: span 2;	
+		}
+		
 		body {
 			background: beige;
 			margin: 0;
@@ -33,30 +31,31 @@
 </head>
 <body>
     <section id="articles">
-		<div>
-			<article>
-				<h3>Titel 1</h3>
-				<p>door <i>Auteur 1</i> op <i>24 april 2025</i></p>
-				<p>Bla bla bla</p>
-			</article>
-			<article>
-				<h3>Titel 1</h3>
-				<p>door <i>Auteur 1</i> op <i>24 april 2025</i></p>
-				<p>Bla bla bla</p>
-			</article>
-		</div>
-		<div>
-			<article>
-				<h3>Titel 1</h3>
-				<p>door <i>Auteur 1</i> op <i>24 april 2025</i></p>
-				<p>Bla bla bla</p>
-			</article>
-			<article>
-				<h3>Titel 1</h3>
-				<p>door <i>Auteur 1</i> op <i>24 april 2025</i></p>
-				<p>Bla bla bla</p>
-			</article>
-		</div>
+		<article class="featured">
+			<h3>Titel 1 feat</h3>
+			<p>door <i>Auteur 1</i> op <i>24 april 2025</i></p>
+			<p>Bla bla bla</p>
+		</article>
+		<article>
+			<h3>Titel 1</h3>
+			<p>door <i>Auteur 1</i> op <i>24 april 2025</i></p>
+			<p>Bla bla bla</p>
+		</article>
+		<article>
+			<h3>Titel 1</h3>
+			<p>door <i>Auteur 1</i> op <i>24 april 2025</i></p>
+			<p>Bla bla bla</p>
+		</article>
+		<article>
+			<h3>Titel 1</h3>
+			<p>door <i>Auteur 1</i> op <i>24 april 2025</i></p>
+			<p>Bla bla bla</p>
+		</article>
+		<article>
+			<h3>Titel 1</h3>
+			<p>door <i>Auteur 1</i> op <i>24 april 2025</i></p>
+			<p>Bla bla bla</p>
+		</article>
     </section>
 </body>
 </html>
